@@ -3,4 +3,4 @@ A responsive weather dashboard using location data for accurate forecast informa
 
 https://tjfitz.github.io/Weather_Dashboard/
 
-![](https://github.com/[TJFitz]/[Weather_Dashboard]/blob/[master]/assets/weatherdashboard.png?raw=true)
+![](/assets/weatherdashboard.png)
