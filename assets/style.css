@@ -105,7 +105,7 @@ blockquote {
 }
 
 .fivedayCard div {
-  margin-top: 1vw;
+  margin-top: 0.5vw;
   display: flex;
   justify-content: center;
   color: rgb(255, 255, 255);
