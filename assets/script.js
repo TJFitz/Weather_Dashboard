@@ -97,6 +97,7 @@ function displayWeather() {
     // dynamic creation of fiveday elements
 
     function displayFiveday(response) {
+      $("#fiveday").empty();
       for (var i = 0; i < 5; i++) {
         var curDay = 4 + i * 8;
         var curIconCode = response.list[curDay].weather[0].icon;
