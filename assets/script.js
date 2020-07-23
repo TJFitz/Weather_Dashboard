@@ -39,7 +39,7 @@ $("#citySearch").keydown(function (e) {
   if (e.keyCode === 13) {
     historyArray.push($("#citySearch").val());
     historyList();
-    $("#citySearch").empty() = "";
+    $("#citySearch").val("");
   }
 });
 
