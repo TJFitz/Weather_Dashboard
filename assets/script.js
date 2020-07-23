@@ -6,9 +6,9 @@ var lon;
 var historyArray = JSON.parse(localStorage.getItem("history"));
 
 // Display for current date in header
-
-$("#dateDisplay").text(moment().format("dddd MMM Mo YYYY"));
-
+var m = moment();
+console.log(m);
+$("#dateDisplay").text(m.format("dddd MMM DD YYYY"));
 // History display and local storage
 
 localStorage.setItem("history", JSON.stringify(historyArray));
