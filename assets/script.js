@@ -26,6 +26,8 @@ function historyList() {
     $("#historyDiv").prepend($("<blockquote>").html(newP));
   }
   localStorage.setItem("history", JSON.stringify(historyArray));
+  cityName = $("#historyDiv:first").children().children()[0].innerHTML;
+  displayWeather();
 }
 
 historyList();
@@ -36,7 +38,7 @@ $("#citySearch").keydown(function (e) {
   if (e.keyCode === 13) {
     historyArray.push($("#citySearch").val());
     historyList();
-    displayWeather();
+    $("#citySearch").empty() = "";
   }
 });
 
@@ -81,7 +83,14 @@ function displayWeather() {
         lon,
       method: "GET",
     }).then(function (response) {
-      $("#currentUV").text(" " + response[0].value);
+      $("#currentUV").text(" " + response[0].value + " ");
+      if (response[0].value < 4) {
+        $("#currentUV").addClass("good");
+      } else if (response[0].value > 8) {
+        $("#currentUV").addClass("severe");
+      } else {
+        $("#currentUV").addClass("moderate");
+      }
     });
   });
 

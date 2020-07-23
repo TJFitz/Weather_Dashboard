@@ -1,6 +1,7 @@
 .container-fluid {
   background-color: rgb(5, 0, 49);
   width: 100%;
+  height: 100vh;
   margin-left: 0vw;
   margin-right: 0vw;
   padding-left: 1vw;
@@ -10,10 +11,11 @@
 
 footer {
   text-align: center;
-  margin-top: 2.3vh;
+  margin-top: 3vh;
 }
 
 .jumbotron {
+  border-radius: 5vh;
   background-color: rgb(26, 65, 148);
   color: rgb(0, 0, 0);
   justify-content: center;
@@ -43,6 +45,7 @@ footer {
 }
 
 blockquote {
+  border-radius: 5vh;
   background-color: rgb(172, 238, 228);
   margin-top: 1vh;
   height: 4vh;
@@ -54,6 +57,7 @@ blockquote {
 }
 
 .historyCard {
+  border-radius: 5vh;
   background-color: rgb(205, 168, 214);
   color: rgb(0, 0, 0);
   min-width: 25vw;
@@ -62,6 +66,7 @@ blockquote {
 }
 
 .forecast {
+  border-radius: 5vh;
   max-width: 65vw;
   top: 3.6vh;
   height: 35vh;
@@ -74,9 +79,10 @@ blockquote {
 }
 
 #fiveday {
+  border-radius: 5vh;
   background-color: rgb(17, 4, 90);
   height: 20vh;
-  width: 99vw;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,6 +90,7 @@ blockquote {
 }
 
 .fivedayCard {
+  border-radius: 5vh;
   overflow: hidden;
   justify-content: center;
   align-items: center;
@@ -93,15 +100,27 @@ blockquote {
   border: solid black;
   margin-left: 1vw;
   margin-right: 1vw;
+  min-width: 10vh;
   background-color: rgba(154, 98, 206, 0.637);
 }
 
 .fivedayCard div {
   margin-top: 1vw;
-  margin-left: 1vw;
   display: flex;
-  justify-content: start;
-  color: aliceblue;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+.good {
+  background-color: green;
+}
+
+.moderate {
+  background-color: yellow;
+}
+
+.severe {
+  background-color: red;
 }
 
 @media screen and (max-width: 768px) {
@@ -112,6 +131,7 @@ blockquote {
   .forecast {
     height: max-content;
     max-width: 100vw;
+    margin-bottom: 5vh;
   }
 }
 
